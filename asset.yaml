@@ -2,7 +2,7 @@
 apiVersion: bucket/v1
 kind: Schema
 metadata:
-  name: rating-bucket
+  name: spica-store-listing-asset-rating-bucket
 spec:
   title: Rating
   description: Describe your new bucket
@@ -51,7 +51,7 @@ spec:
 apiVersion: bucket/v1
 kind: Schema
 metadata:
-  name: place-bucket
+  name: spica-store-listing-asset-place-bucket
 spec:
   title: Place
   description: Describe your new bucket
@@ -123,7 +123,7 @@ spec:
       primary: title
       bucket:
         resourceFieldRef:
-          schemaName: rating-bucket
+          schemaName: spica-store-listing-asset-rating-bucket
     working_hours:
       type: array
       title: working_hours
@@ -217,7 +217,7 @@ spec:
 apiVersion: bucket/v1
 kind: Schema
 metadata:
-  name: public-holiday-bucket
+  name: spica-store-listing-asset-public-holiday-bucket
 spec:
   title: Public Holiday
   description: Describe your new bucket
